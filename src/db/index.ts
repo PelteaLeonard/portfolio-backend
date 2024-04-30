@@ -1,9 +1,8 @@
 import { Pool } from "pg";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 export default new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "portfolio",
-  password: "test123",
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: isProduction ? { rejectUnauthorized: false } : false,
 });
