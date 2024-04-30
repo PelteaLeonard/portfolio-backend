@@ -1,0 +1,1 @@
+export const CREATE_EXTENSION_UUID = 'CREATE EXTENSION IF NOT EXISTS "uuid-ossp"';
