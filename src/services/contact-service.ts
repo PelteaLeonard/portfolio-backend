@@ -14,6 +14,14 @@ class ContactService extends BaseService<Contact, ContactRepository> {
     return contact;
   }
 
+  async createTable(): Promise<void> {
+    return this.repository.createTable();
+  }
+
+  async dropTable(): Promise<void>{
+    return this.repository.dropTable()
+  }
+
   async getAllByFirstName(firstName: string): Promise<Contact[]> {
     this.logger.info(
       `Getting ${this.getEntityName().plural} by first name ${firstName}`

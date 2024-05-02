@@ -11,6 +11,8 @@ abstract class BaseService<T, R extends BaseRepository<T>> {
     this.logger = getLogger(module);
   }
 
+  abstract createTable(): void;
+
   getEntityName(): { singular: string; plural: string } {
     return this.repository.getEntityName();
   }

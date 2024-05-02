@@ -2,6 +2,7 @@ import ObjectUtils from "../utils/object-utils";
 import BaseRepository from "./base-repository";
 import { Contact } from "../types/contact-types";
 import { createTable } from "../constants/create-table-constants";
+import { dropTable } from "../constants/drop-table-constants";
 
 class ContactRepository extends BaseRepository<Contact> {
   protected tableName = "contacts";
@@ -9,6 +10,10 @@ class ContactRepository extends BaseRepository<Contact> {
 
   async createTable(): Promise<void> {
     await this.db.query(createTable.contacts);
+  }
+
+  async dropTable(): Promise<void> {
+    await this.db.query(dropTable.contacts);
   }
 
   async findAllByFirstName(firstName: string): Promise<Contact[]> {
