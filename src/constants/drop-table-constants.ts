@@ -1,4 +1,4 @@
-import { Table } from "./table.constants";
+import { Table } from "./table-constants";
 
 const DROP_TABLE_CONTACTS = "DROP TABLE IF EXISTS contacts";
 

@@ -20,10 +20,26 @@ class SqlController {
   dropTables = asyncHandler(async (_req, res) => {
     await this.sqlService.dropTables();
     res.json({
-        message: "Tables has been deleted",
-        severity: Severity.Success
-    })
-  })
+      message: "Tables have been deleted",
+      severity: Severity.Success,
+    });
+  });
+
+  createExtensionUuid = asyncHandler(async (_req, res) => {
+    await this.sqlService.createExtensionUuid();
+    res.json({
+      message: "Extension uuid have been created",
+      severity: Severity.Success,
+    });
+  });
+
+  dropExtensionUuid = asyncHandler(async (_req, res) => {
+    await this.sqlService.dropExtensionUuid();
+    res.json({
+      message: "Extension uuid have been dropped",
+      severity: Severity.Success,
+    });
+  });
 }
 
 export default SqlController;

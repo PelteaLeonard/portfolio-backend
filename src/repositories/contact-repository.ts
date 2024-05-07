@@ -1,8 +1,8 @@
 import ObjectUtils from "../utils/object-utils";
 import BaseRepository from "./base-repository";
 import { Contact } from "../types/contact-types";
-import { createTable } from "../constants/create-table-constants";
 import { dropTable } from "../constants/drop-table-constants";
+import { createTable } from "../constants/create-table-constants";
 
 class ContactRepository extends BaseRepository<Contact> {
   protected tableName = "contacts";

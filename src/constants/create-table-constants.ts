@@ -1,3 +1,5 @@
+import { Table } from "./table-constants";
+
 const CREATE_TABLE_CONTACTS = `
     CREATE TABLE IF NOT EXISTS contacts(
         id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
@@ -8,6 +10,6 @@ const CREATE_TABLE_CONTACTS = `
     )
 `;
 
-export const createTable = {
-  contacts: CREATE_TABLE_CONTACTS,
+export const createTable: Record<Table, string> = {
+  [Table.Contacts]: CREATE_TABLE_CONTACTS,
 };

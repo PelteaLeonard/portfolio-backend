@@ -18,8 +18,8 @@ class ContactService extends BaseService<Contact, ContactRepository> {
     return this.repository.createTable();
   }
 
-  async dropTable(): Promise<void>{
-    return this.repository.dropTable()
+  async dropTable(): Promise<void> {
+    return this.repository.dropTable();
   }
 
   async getAllByFirstName(firstName: string): Promise<Contact[]> {
