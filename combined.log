@@ -151,3 +151,5 @@
 2024-04-28 13:43:17 INFO base-controller.ts: Creating with request payload {"firstName":"Leonar","lastName":"Peltea","email":"leonard.peltea5@yahoo.com","message":"Hello"}
 2024-04-28 13:43:17 INFO base-service.ts: Creating contact with data {"firstName":"Leonar","lastName":"Peltea","email":"leonard.peltea5@yahoo.com","message":"Hello"}
 2024-04-28 13:43:17 INFO base-repository.ts: Saving contact in table contacts
+2024-05-07 09:10:16 INFO sql-repository.ts: Creating extension UUID OSSP
+2024-05-07 09:11:04 INFO sql-repository.ts: Dropping extension "uuid-ossp"
