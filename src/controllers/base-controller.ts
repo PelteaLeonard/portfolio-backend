@@ -19,7 +19,9 @@ abstract class BaseController<T, S extends BaseService<T, BaseRepository<T>>> {
   create = asyncHandler(async (req, res) => {
     const requestPayload = req.body;
     this.logger.info(
-      `Creating with request payload ${JSON.stringify(requestPayload)}`
+      `Creating ${
+        this.service.getEntityName().singular
+      } with request payload ${JSON.stringify(requestPayload)}`
     );
     const entity = await this.service.create(requestPayload);
     res.json({

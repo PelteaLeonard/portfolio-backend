@@ -9,7 +9,20 @@ class ContactController extends BaseController<Contact, ContactService> {
   constructor(service: ContactService) {
     super(service);
   }
-  
+
+  create = asyncHandler(async (req, res) => {
+    const requestPayload = req.body;
+    this.logger.info(
+      `Creating contact with request payload ${JSON.stringify(requestPayload)}`
+    );
+    const contact = await this.service.create(requestPayload);
+    res.json({
+      message: `Your message has been sent to Leonard!`,
+      severity: Severity.Success,
+      contact,
+    });
+  });
+
   getAllByFirstName = asyncHandler(async (req, res) => {
     const firstName = req.params.firstName;
 

@@ -2,6 +2,7 @@ import EmailUtils from "../utils/email-utils";
 import BaseService from "./base-service";
 import ContactRepository from "../repositories/contact-repository";
 import { Contact } from "../types/contact-types";
+import EnvVarMissingException from "../exceptions/env-var-missing-exception";
 
 class ContactService extends BaseService<Contact, ContactRepository> {
   constructor(repository: ContactRepository) {
@@ -10,7 +11,12 @@ class ContactService extends BaseService<Contact, ContactRepository> {
 
   async create(data: Partial<Contact>): Promise<Contact> {
     const contact = await super.create(data);
-    await EmailUtils.sendContactEmail(contact.email, contact);
+    if (!process.env.PERSONAL_EMAIL) {
+      throw new EnvVarMissingException(
+        `Environment variable "PERSONAL_EMAIL" it's missing!`
+      );
+    }
+    await EmailUtils.sendContactEmail(process.env.PERSONAL_EMAIL, contact);
     return contact;
   }
 

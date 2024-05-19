@@ -5,7 +5,7 @@ const CREATE_TABLE_CONTACTS = `
         id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
         first_name VARCHAR(255),
         last_name VARCHAR(255),
-        email VARCHAR(255) UNIQUE NOT NULL,
+        email VARCHAR(255) NOT NULL,
         message VARCHAR(1000) 
     )
 `;

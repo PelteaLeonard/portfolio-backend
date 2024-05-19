@@ -153,3 +153,36 @@
 2024-04-28 13:43:17 INFO base-repository.ts: Saving contact in table contacts
 2024-05-07 09:10:16 INFO sql-repository.ts: Creating extension UUID OSSP
 2024-05-07 09:11:04 INFO sql-repository.ts: Dropping extension "uuid-ossp"
+2024-05-08 08:26:38 INFO base-controller.ts: Getting all contacts
+2024-05-08 08:26:38 INFO base-service.ts: Getting all contacts
+2024-05-08 08:26:38 INFO base-repository.ts: Finding all contacts from table contacts
+2024-05-08 08:26:52 INFO base-controller.ts: Getting all contacts
+2024-05-08 08:26:52 INFO base-service.ts: Getting all contacts
+2024-05-08 08:26:52 INFO base-repository.ts: Finding all contacts from table contacts
+2024-05-08 08:27:22 INFO base-controller.ts: Getting all contacts
+2024-05-08 08:27:22 INFO base-service.ts: Getting all contacts
+2024-05-08 08:27:22 INFO base-repository.ts: Finding all contacts from table contacts
+2024-05-12 10:34:15 INFO base-controller.ts: Creating with request payload {"firstName":"asfas","lastName":"fasfa","email":"asgasga","message":"vdsbdb"}
+2024-05-12 10:34:15 INFO base-service.ts: Creating contact with data {"firstName":"asfas","lastName":"fasfa","email":"asgasga","message":"vdsbdb"}
+2024-05-12 10:34:15 INFO base-repository.ts: Saving contact in table contacts
+2024-05-19 09:26:20 INFO base-controller.ts: Creating with request payload {"firstName":"asfas","lastName":"fasfa","email":"asgasga","message":"wdwd"}
+2024-05-19 09:26:20 INFO base-service.ts: Creating contact with data {"firstName":"asfas","lastName":"fasfa","email":"asgasga","message":"wdwd"}
+2024-05-19 09:26:20 INFO base-repository.ts: Saving contact in table contacts
+2024-05-19 09:26:33 INFO base-controller.ts: Creating with request payload {"firstName":"asg","lastName":"asg","email":"asgasg","message":"asgasgas"}
+2024-05-19 09:26:33 INFO base-service.ts: Creating contact with data {"firstName":"asg","lastName":"asg","email":"asgasg","message":"asgasgas"}
+2024-05-19 09:26:33 INFO base-repository.ts: Saving contact in table contacts
+2024-05-19 09:38:41 INFO base-controller.ts: Creating contact with request payload {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"mesaj"}
+2024-05-19 09:38:41 INFO base-service.ts: Creating contact with data {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"mesaj"}
+2024-05-19 09:38:41 INFO base-repository.ts: Saving contact in table contacts
+2024-05-19 09:48:28 INFO base-controller.ts: Creating contact with request payload {"firstName":"Leonard","lastName":"Peltea","email":"leonard.peltea@yahoo.com","message":"hi!\n"}
+2024-05-19 09:48:28 INFO base-service.ts: Creating contact with data {"firstName":"Leonard","lastName":"Peltea","email":"leonard.peltea@yahoo.com","message":"hi!\n"}
+2024-05-19 09:48:28 INFO base-repository.ts: Saving contact in table contacts
+2024-05-19 09:53:25 INFO base-controller.ts: Creating contact with request payload {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"asgaga"}
+2024-05-19 09:53:25 INFO base-service.ts: Creating contact with data {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"asgaga"}
+2024-05-19 09:53:25 INFO base-repository.ts: Saving contact in table contacts
+2024-05-19 09:56:02 INFO base-controller.ts: Creating contact with request payload {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"asgasa"}
+2024-05-19 09:56:02 INFO base-service.ts: Creating contact with data {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"asgasa"}
+2024-05-19 09:56:02 INFO base-repository.ts: Saving contact in table contacts
+2024-05-19 09:59:39 INFO base-controller.ts: Creating contact with request payload {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"asgaga"}
+2024-05-19 09:59:39 INFO base-service.ts: Creating contact with data {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"asgaga"}
+2024-05-19 09:59:39 INFO base-repository.ts: Saving contact in table contacts
