@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000;
 if (process.env.NODE_ENV === "production") {
   app.use(
     cors({
-      origin: "https://portfolio-frontend-six-snowy.vercel.app/",
+      origin: "https://portfolio-frontend-six-snowy.vercel.app",
       credentials: true,
     })
   );
