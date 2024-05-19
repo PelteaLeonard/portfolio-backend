@@ -1,8 +1,6 @@
 import dotenv from "dotenv";
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config();
-}
+dotenv.config();
 
 import cors from "cors";
 import path from "path";
@@ -19,15 +17,13 @@ const port = process.env.PORT || 5000;
 if (process.env.NODE_ENV === "production") {
   app.use(
     cors({
-      origin: "https://portfolio-frontend-six-snowy.vercel.app",
-      credentials: true,
+      origin: "https://portfolio-frontend-six-snowy.vercel.app"
     })
   );
 } else {
   app.use(
     cors({
-      origin: "http://localhost:5173",
-      credentials: true,
+      origin: "http://localhost:5173"
     })
   );
 }

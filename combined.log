@@ -186,3 +186,6 @@
 2024-05-19 09:59:39 INFO base-controller.ts: Creating contact with request payload {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"asgaga"}
 2024-05-19 09:59:39 INFO base-service.ts: Creating contact with data {"firstName":"Firstname","lastName":"Lastname","email":"email@gmail.com","message":"asgaga"}
 2024-05-19 09:59:39 INFO base-repository.ts: Saving contact in table contacts
+2024-05-19 11:06:44 INFO base-controller.ts: Creating contact with request payload {"firstName":"LEONARD","lastName":"PELTEA","email":"email@gmail.com","message":"asdfv"}
+2024-05-19 11:06:44 INFO base-service.ts: Creating contact with data {"firstName":"LEONARD","lastName":"PELTEA","email":"email@gmail.com","message":"asdfv"}
+2024-05-19 11:06:44 INFO base-repository.ts: Saving contact in table contacts
